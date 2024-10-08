@@ -24,7 +24,7 @@ d_30 = d_45 - d_15
 def read_img(img_path):
     # img_path: /home/yt219/data/multi_PIE_crop_128/192/192_01_02_140_07_crop_128.png
     img = Image.open(img_path).convert('RGB')
-    img = img.resize((128,128), Image.ANTIALIAS)
+    img = img.resize((128,128), Image.LANCZOS)
     return img
 
 def get_multiPIE_img(img_path):
@@ -45,7 +45,7 @@ def get_multiPIE_img(img_path):
         
     img2_path = '/home/yt219/data/multi_PIE_crop_128/' + ID + '/' + ID + '_01_' + status + '_' + view + '_' + bright + '_crop_128.png'
     img2 = read_img( img2_path )
-    img2 = img2.resize((128,128), Image.ANTIALIAS)
+    img2 = img2.resize((128,128), Image.LANCZOS)
     return view2, img2
 
 def get_300w_LP_img(img_path):
@@ -89,7 +89,7 @@ def get_300w_LP_img(img_path):
     
     new_img = img_path[:left+1] + str(tmp) + '_128.jpg'
     img2 = read_img( new_img )
-    img2 = img2.resize((128,128), Image.ANTIALIAS)
+    img2 = img2.resize((128,128), Image.LANCZOS)
     
     return view2, img2
 

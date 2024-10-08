@@ -1,3 +1,10 @@
 test_data/139099_128.jpg
 test_data/080004_128.jpg
 test_data/116669_128.jpg
+test_data/Atal_Bihari_Vajpayee_0001.png
+test_data/George_Clooney_0002.png
+test_data/Muhammad_Ali_0001.png
+test_data/Nelson_Mandela_0002.png
+test_data/Robert_F_Kennedy_Jr_0001.png
+test_data/Tom_Cruise_0008.png
+test_data/Tom_Hanks_0006.png
